@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">340204832434-paio1erj62koa3leng71sk6nb2olio0i.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">340204832434</string>
+    <string name="google_api_key" translatable="false">AIzaSyAHj2hbCe7e82DYN-hZA38WV0FbgTDlsgQ</string>
+    <string name="google_app_id" translatable="false">1:340204832434:android:d2fc3ee34a09089c016bab</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAHj2hbCe7e82DYN-hZA38WV0FbgTDlsgQ</string>
+    <string name="google_storage_bucket" translatable="false">deffo-64554.appspot.com</string>
+    <string name="project_id" translatable="false">deffo-64554</string>
+</resources>

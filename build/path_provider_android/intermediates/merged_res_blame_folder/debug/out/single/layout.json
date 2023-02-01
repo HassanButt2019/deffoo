@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/path_provider_android/intermediates/merged_res/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/path_provider_android/intermediates/merged_res/debug/layout/notification_action.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/path_provider_android/intermediates/merged_res/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/path_provider_android/intermediates/merged_res/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/path_provider_android/intermediates/merged_res/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/path_provider_android/intermediates/merged_res/debug/layout/custom_dialog.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/layout/custom_dialog.xml"
+    }
+]

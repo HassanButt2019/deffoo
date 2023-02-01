@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "340204832434",
+    "project_id": "deffo-64554",
+    "storage_bucket": "deffo-64554.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340204832434:android:d2fc3ee34a09089c016bab",
+        "android_client_info": {
+          "package_name": "com.deffo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340204832434-8v02kln49rnup5oid0buanmvrt08ttp7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deffo",
+            "certificate_hash": "fbdc74764999339057153522ef65ce4d57c9c36f"
+          }
+        },
+        {
+          "client_id": "340204832434-paio1erj62koa3leng71sk6nb2olio0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHj2hbCe7e82DYN-hZA38WV0FbgTDlsgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340204832434-paio1erj62koa3leng71sk6nb2olio0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

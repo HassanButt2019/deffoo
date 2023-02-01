@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/url_launcher_android/intermediates/merged_res/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/url_launcher_android/intermediates/merged_res/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/url_launcher_android/intermediates/merged_res/debug/drawable/notification_bg.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/url_launcher_android/intermediates/merged_res/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/3f8fb4da84fe36fdbb1fe84f28c48dd0/transformed/core-1.6.0/res/drawable/notification_bg_low.xml"
+    }
+]

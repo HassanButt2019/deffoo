@@ -1,0 +1,310 @@
+class TourModel {
+  String? id;
+  String? hostId;
+  String? userId;
+  String? tourId;
+  String? tourName;
+  String? customerName;
+  String? phone;
+  String? email;
+  String? date;
+  String? noOfGuest;
+  String? amount;
+  String? payment;
+  String? createDate;
+  String? status;
+  String? confirmCancel;
+  String? completeBooking;
+  String? userName;
+  String? firstname;
+  String? lastname;
+  String? userEmail;
+  String? gender;
+  String? userPhone;
+  String? userFullname;
+  String? userPassword;
+  String? idCardName;
+  String? panCardNumber;
+  String? userTypeId;
+  Null? userBdate;
+  String? numberOfTable;
+  String? isEmailVarified;
+  String? varifiedToken;
+  String? varificationCode;
+  String? userGcmCode;
+  String? userIosToken;
+  String? userImage;
+  String? userCity;
+  String? userState;
+  String? pincode;
+  String? latitude;
+  String? longnitute;
+  String? overview;
+  String? location;
+  String? idProof;
+  String? state;
+  String? streetAddress;
+  String? userLoginStatus;
+  String? userStatus;
+  String? roleStatus;
+  String? bankAcoountHolderName;
+  String? bankName;
+  String? accountNo;
+  String? ifscCode;
+  String? tablePerAmount;
+  String? aaddharNo;
+  String? aaddharPhoto;
+  String? otp;
+  String? mode;
+  String? password;
+  String? createdAt;
+  String? cityId;
+  String? activityName;
+  String? contactName;
+  String? contactNo;
+  String? emailId;
+  String? startDate;
+  String? endDate;
+  String? address;
+  String? briefOverview;
+  String? termCondition;
+  String? thingsCarry;
+  String? ratePerPerson;
+  String? accountName;
+  String? image;
+
+  TourModel(
+      {this.id,
+        this.hostId,
+        this.userId,
+        this.tourId,
+        this.tourName,
+        this.customerName,
+        this.phone,
+        this.email,
+        this.date,
+        this.noOfGuest,
+        this.amount,
+        this.payment,
+        this.createDate,
+        this.status,
+        this.confirmCancel,
+        this.completeBooking,
+        this.userName,
+        this.firstname,
+        this.lastname,
+        this.userEmail,
+        this.gender,
+        this.userPhone,
+        this.userFullname,
+        this.userPassword,
+        this.idCardName,
+        this.panCardNumber,
+        this.userTypeId,
+        this.userBdate,
+        this.numberOfTable,
+        this.isEmailVarified,
+        this.varifiedToken,
+        this.varificationCode,
+        this.userGcmCode,
+        this.userIosToken,
+        this.userImage,
+        this.userCity,
+        this.userState,
+        this.pincode,
+        this.latitude,
+        this.longnitute,
+        this.overview,
+        this.location,
+        this.idProof,
+        this.state,
+        this.streetAddress,
+        this.userLoginStatus,
+        this.userStatus,
+        this.roleStatus,
+        this.bankAcoountHolderName,
+        this.bankName,
+        this.accountNo,
+        this.ifscCode,
+        this.tablePerAmount,
+        this.aaddharNo,
+        this.aaddharPhoto,
+        this.otp,
+        this.mode,
+        this.password,
+        this.createdAt,
+        this.cityId,
+        this.activityName,
+        this.contactName,
+        this.contactNo,
+        this.emailId,
+        this.startDate,
+        this.endDate,
+        this.address,
+        this.briefOverview,
+        this.termCondition,
+        this.thingsCarry,
+        this.ratePerPerson,
+        this.accountName,
+        this.image});
+
+  TourModel.fromJson(Map<String, dynamic> json) {
+    id = json['booking_id'];
+    hostId = json['host_id'];
+    userId = json['user_id'];
+    tourId = json['tour_id'];
+    tourName = json['tour_name'];
+    customerName = json['customer_name'];
+    phone = json['phone'];
+    email = json['email'];
+    date = json['date'];
+    noOfGuest = json['no_of_guest'];
+    amount = json['amount'];
+    payment = json['payment'];
+    createDate = json['create_date'];
+    status = json['status'];
+    confirmCancel = json['confirm_cancel'];
+    completeBooking = json['complte_booking'];
+    userName = json['user_name'];
+    firstname = json['firstname'];
+    lastname = json['lastname'];
+    userEmail = json['user_email'];
+    gender = json['gender'];
+    userPhone = json['user_phone'];
+    userFullname = json['user_fullname'];
+    userPassword = json['user_password'];
+    idCardName = json['id_card_name'];
+    panCardNumber = json['pan_card_number'];
+    userTypeId = json['user_type_id'];
+    userBdate = json['user_bdate'];
+    numberOfTable = json['number_of_table'];
+    isEmailVarified = json['is_email_varified'];
+    varifiedToken = json['varified_token'];
+    varificationCode = json['varification_code'];
+    userGcmCode = json['user_gcm_code'];
+    userIosToken = json['user_ios_token'];
+    userImage = json['user_image'];
+    userCity = json['user_city'];
+    userState = json['user_state'];
+    pincode = json['pincode'];
+    latitude = json['latitude'];
+    longnitute = json['longnitute'];
+    overview = json['overview'];
+    location = json['location'];
+    idProof = json['id_proof'];
+    state = json['state'];
+    streetAddress = json['street_address'];
+    userLoginStatus = json['user_login_status'];
+    userStatus = json['user_status'];
+    roleStatus = json['role_status'];
+    bankAcoountHolderName = json['bankAcoountHolderName'];
+    bankName = json['bankName'];
+    accountNo = json['accountNo'];
+    ifscCode = json['ifscCode'];
+    tablePerAmount = json['table_per_amount'];
+    aaddharNo = json['aaddhar_no'];
+    aaddharPhoto = json['aaddhar_photo'];
+    otp = json['otp'];
+    mode = json['mode'];
+    password = json['password'];
+    createdAt = json['created_at'];
+    cityId = json['city_id'];
+    activityName = json['activity_name'];
+    contactName = json['contact_name'];
+    contactNo = json['contact_no'];
+    emailId = json['email_id'];
+    startDate = json['start_date'];
+    endDate = json['end_date'];
+    address = json['address'];
+    briefOverview = json['brief_overview'];
+    termCondition = json['term_condition'];
+    thingsCarry = json['things_carry'];
+    ratePerPerson = json['rate_per_person'];
+    accountName = json['account_name'];
+    accountNo = json['account_no'];
+    bankName = json['bank_name'];
+    ifscCode = json['ifsc_code'];
+    image = json['image'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['id'] = this.id;
+    data['host_id'] = this.hostId;
+    data['user_id'] = this.userId;
+    data['tour_id'] = this.tourId;
+    data['tour_name'] = this.tourName;
+    data['customer_name'] = this.customerName;
+    data['phone'] = this.phone;
+    data['email'] = this.email;
+    data['date'] = this.date;
+    data['no_of_guest'] = this.noOfGuest;
+    data['amount'] = this.amount;
+    data['payment'] = this.payment;
+    data['create_date'] = this.createDate;
+    data['status'] = this.status;
+    data['confirm_cancel'] = this.confirmCancel;
+    data['complte_booking'] = this.completeBooking;
+    data['user_name'] = this.userName;
+    data['firstname'] = this.firstname;
+    data['lastname'] = this.lastname;
+    data['user_email'] = this.userEmail;
+    data['gender'] = this.gender;
+    data['user_phone'] = this.userPhone;
+    data['user_fullname'] = this.userFullname;
+    data['user_password'] = this.userPassword;
+    data['id_card_name'] = this.idCardName;
+    data['pan_card_number'] = this.panCardNumber;
+    data['user_type_id'] = this.userTypeId;
+    data['user_bdate'] = this.userBdate;
+    data['number_of_table'] = this.numberOfTable;
+    data['is_email_varified'] = this.isEmailVarified;
+    data['varified_token'] = this.varifiedToken;
+    data['varification_code'] = this.varificationCode;
+    data['user_gcm_code'] = this.userGcmCode;
+    data['user_ios_token'] = this.userIosToken;
+    data['user_image'] = this.userImage;
+    data['user_city'] = this.userCity;
+    data['user_state'] = this.userState;
+    data['pincode'] = this.pincode;
+    data['latitude'] = this.latitude;
+    data['longnitute'] = this.longnitute;
+    data['overview'] = this.overview;
+    data['location'] = this.location;
+    data['id_proof'] = this.idProof;
+    data['state'] = this.state;
+    data['street_address'] = this.streetAddress;
+    data['user_login_status'] = this.userLoginStatus;
+    data['user_status'] = this.userStatus;
+    data['role_status'] = this.roleStatus;
+    data['bankAcoountHolderName'] = this.bankAcoountHolderName;
+    data['bankName'] = this.bankName;
+    data['accountNo'] = this.accountNo;
+    data['ifscCode'] = this.ifscCode;
+    data['table_per_amount'] = this.tablePerAmount;
+    data['aaddhar_no'] = this.aaddharNo;
+    data['aaddhar_photo'] = this.aaddharPhoto;
+    data['otp'] = this.otp;
+    data['mode'] = this.mode;
+    data['password'] = this.password;
+    data['created_at'] = this.createdAt;
+    data['city_id'] = this.cityId;
+    data['activity_name'] = this.activityName;
+    data['contact_name'] = this.contactName;
+    data['contact_no'] = this.contactNo;
+    data['email_id'] = this.emailId;
+    data['start_date'] = this.startDate;
+    data['end_date'] = this.endDate;
+    data['address'] = this.address;
+    data['brief_overview'] = this.briefOverview;
+    data['term_condition'] = this.termCondition;
+    data['things_carry'] = this.thingsCarry;
+    data['rate_per_person'] = this.ratePerPerson;
+    data['account_name'] = this.accountName;
+    data['account_no'] = this.accountNo;
+    data['bank_name'] = this.bankName;
+    data['ifsc_code'] = this.ifscCode;
+    data['image'] = this.image;
+    return data;
+  }
+}

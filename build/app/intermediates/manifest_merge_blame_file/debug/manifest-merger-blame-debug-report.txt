@@ -1,0 +1,648 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.deffo"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:10:5-67
+14-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:10:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:11:5-80
+15-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:11:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:12:5-81
+16-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:12:22-78
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:13:5-65
+17-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:13:22-62
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:14:5-79
+18-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:14:22-76
+19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+19-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:15:5-81
+19-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:15:22-78
+20    <uses-permission android:name="android.hardware.location.gps" /> <!-- Declaring the required permissions -->
+20-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:16:5-69
+20-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:16:22-66
+21    <queries>
+21-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:18:5-39:15
+22
+23        <!-- If your app opens https URLs -->
+24        <intent>
+24-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:20:9-23:18
+25            <action android:name="android.intent.action.VIEW" />
+25-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:21:13-65
+25-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:21:21-62
+26
+27            <data android:scheme="https" />
+27-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:13-44
+27-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:19-41
+28        </intent>
+29        <!-- If your app makes calls -->
+30        <intent>
+30-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:25:9-28:18
+31            <action android:name="android.intent.action.DIAL" />
+31-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:26:13-65
+31-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:26:21-62
+32
+33            <data android:scheme="tel" />
+33-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:13-44
+33-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:19-41
+34        </intent>
+35        <!-- If your sends SMS messages -->
+36        <intent>
+36-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:30:9-33:18
+37            <action android:name="android.intent.action.SENDTO" />
+37-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:31:13-67
+37-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:31:21-64
+38
+39            <data android:scheme="smsto" />
+39-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:13-44
+39-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:19-41
+40        </intent>
+41        <!-- If your app sends emails -->
+42        <intent>
+42-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:35:9-38:18
+43            <action android:name="android.intent.action.SEND" />
+43-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:36:13-65
+43-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:36:21-62
+44
+45            <data android:mimeType="*/*" />
+45-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:13-44
+46        </intent>
+47        <intent>
+47-->[:file_picker] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:18
+48            <action android:name="android.intent.action.GET_CONTENT" />
+48-->[:file_picker] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-72
+48-->[:file_picker] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-69
+49
+50            <data android:mimeType="*/*" />
+50-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:13-44
+51        </intent>
+52        <intent>
+52-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:13:9-19:18
+53            <action android:name="android.intent.action.VIEW" />
+53-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:21:13-65
+53-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:21:21-62
+54
+55            <data
+55-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:13-44
+56                android:mimeType="*/*"
+57                android:scheme="*" />
+57-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:19-41
+58        </intent>
+59        <intent>
+59-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:20:9-29:18
+60            <action android:name="android.intent.action.VIEW" />
+60-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:21:13-65
+60-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:21:21-62
+61
+62            <category android:name="android.intent.category.BROWSABLE" />
+62-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:23:13-74
+62-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:23:23-71
+63
+64            <data
+64-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:13-44
+65                android:host="pay"
+66                android:mimeType="*/*"
+67                android:scheme="upi" />
+67-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:22:19-41
+68        </intent>
+69        <intent>
+69-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:30:9-32:18
+70            <action android:name="android.intent.action.MAIN" />
+70-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:73:17-69
+70-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:73:25-66
+71        </intent>
+72        <intent>
+72-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:38:9-40:18
+73            <action android:name="rzp.device_token.share" />
+73-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:39:13-61
+73-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:39:21-58
+74        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+75        <package android:name="com.google.android.apps.maps" />
+75-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/58566d9b6984c216dc051051d0474ff8/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+75-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/58566d9b6984c216dc051051d0474ff8/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+76    </queries>
+77
+78    <uses-permission android:name="android.permission.WAKE_LOCK" />
+78-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-68
+78-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-65
+79    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+79-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+79-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
+80    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+80-->[:geolocator_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-77
+80-->[:geolocator_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-74
+81    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+81-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-81
+81-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-78
+82    <uses-permission android:name="android.permission.VIBRATE" />
+82-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-66
+82-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-63
+83    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+83-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+83-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+84    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+84-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-79
+84-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-76
+85    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+85-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-77
+85-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-74
+86    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+86-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:29:5-82
+86-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:29:22-79
+87    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+87-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/b4f5238f4ee0d26d39d8b70e223ced76/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:25:5-79
+87-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/b4f5238f4ee0d26d39d8b70e223ced76/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:25:22-76
+88
+89    <uses-feature
+89-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/58566d9b6984c216dc051051d0474ff8/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+90        android:glEsVersion="0x00020000"
+90-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/58566d9b6984c216dc051051d0474ff8/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+91        android:required="true" />
+91-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/58566d9b6984c216dc051051d0474ff8/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+92
+93    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+93-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:26:5-110
+93-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:26:22-107
+94
+95    <application
+95-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:40:5-86:19
+96        android:name="androidx.multidex.MultiDexApplication"
+97        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+97-->[androidx.core:core:1.8.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/1aff575abe68e2d960b5656b9f2fb7c6/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+98        android:debuggable="true"
+99        android:icon="@mipmap/ic_launcher"
+99-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:41:9-43
+100        android:label="Deffo" >
+100-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:42:9-30
+101        <meta-data
+101-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:43:9-45:71
+102            android:name="com.google.android.geo.API_KEY"
+102-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:44:13-58
+103            android:value="AIzaSyBOhH-_4E4BPqgKR21SUOcMwqpzo_Cmt7o" />
+103-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:45:13-68
+104        <!--
+105            <meta-data
+106            android:name="com.google.android.geo.API_KEY"
+107            android:value="AIzaSyCHFEe9xv9B5LZRW4JME4T68fyQgIm2hII" />
+108        -->
+109
+110        <activity
+110-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:50:9-76:20
+111            android:name="com.deffo.MainActivity"
+111-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:51:13-41
+112            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+112-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:52:13-163
+113            android:hardwareAccelerated="true"
+113-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:53:13-47
+114            android:launchMode="singleTop"
+114-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:54:13-43
+115            android:theme="@style/LaunchTheme"
+115-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:55:13-47
+116            android:windowSoftInputMode="adjustResize" >
+116-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:56:13-55
+117
+118            <!--
+119                 Specifies an Android theme to apply to this Activity as soon as
+120                 the Android process has started. This theme is visible to the user
+121                 while the Flutter UI initializes. After that, this theme continues
+122                 to determine the Window background behind the Flutter UI.
+123            -->
+124            <meta-data
+124-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:61:13-63:57
+125                android:name="io.flutter.embedding.android.NormalTheme"
+125-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:62:17-72
+126                android:resource="@style/NormalTheme" />
+126-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:63:17-54
+127            <!--
+128                 Displays an Android View that continues showing the launch screen
+129                 Drawable until Flutter paints its first frame, then this splash
+130                 screen fades out. A splash screen is useful to avoid any visual
+131                 gap between the end of Android's launch screen and the painting of
+132                 Flutter's first frame.
+133            -->
+134            <meta-data
+134-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:69:13-71:66
+135                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+135-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:70:17-81
+136                android:resource="@drawable/launch_background" />
+136-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:71:17-63
+137
+138            <intent-filter>
+138-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:72:13-75:29
+139                <action android:name="android.intent.action.MAIN" />
+139-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:73:17-69
+139-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:73:25-66
+140
+141                <category android:name="android.intent.category.LAUNCHER" />
+141-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:74:17-77
+141-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:74:27-74
+142            </intent-filter>
+143        </activity>
+144        <activity
+144-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:77:9-80:72
+145            android:name="com.yalantis.ucrop.UCropActivity"
+145-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:78:13-60
+146            android:screenOrientation="portrait"
+146-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:79:13-49
+147            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+147-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:80:13-69
+148        <!--
+149             Don't delete the meta-data below.
+150             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+151        -->
+152        <meta-data
+152-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:83:9-85:33
+153            android:name="flutterEmbedding"
+153-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:84:13-44
+154            android:value="2" />
+154-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:85:13-30
+155
+156        <service
+156-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-15:72
+157            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+157-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-107
+158            android:exported="false"
+158-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
+159            android:permission="android.permission.BIND_JOB_SERVICE" />
+159-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-69
+160        <service
+160-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-22:19
+161            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+161-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-97
+162            android:exported="false" >
+162-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+163            <intent-filter>
+163-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
+164                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+164-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-78
+164-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-75
+165            </intent-filter>
+166        </service>
+167
+168        <receiver
+168-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-31:20
+169            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+169-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-98
+170            android:exported="true"
+170-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-36
+171            android:permission="com.google.android.c2dm.permission.SEND" >
+171-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-73
+172            <intent-filter>
+172-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-30:29
+173                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+173-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-81
+173-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-78
+174            </intent-filter>
+175        </receiver>
+176
+177        <service
+177-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:9-37:19
+178            android:name="com.google.firebase.components.ComponentDiscoveryService"
+178-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:18-89
+179            android:directBootAware="true"
+179-->[com.google.firebase:firebase-common:20.1.2] /Users/hassanraufbutt/.gradle/caches/transforms-3/b3554375aa26982af84d6a277f6f9e62/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:35:13-43
+180            android:exported="false" >
+180-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:55:13-37
+181            <meta-data
+181-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:34:13-36:85
+182                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+182-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:17-128
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:36:17-82
+184            <meta-data
+184-->[:firebase_core] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+185                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+185-->[:firebase_core] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+186                android:value="com.google.firebase.components.ComponentRegistrar" />
+186-->[:firebase_core] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+187            <meta-data
+187-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:56:13-58:85
+188                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+188-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:57:17-119
+189                android:value="com.google.firebase.components.ComponentRegistrar" />
+189-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:58:17-82
+190            <meta-data
+190-->[com.google.firebase:firebase-datatransport:18.1.6] /Users/hassanraufbutt/.gradle/caches/transforms-3/76f364c05ff1c1f9c2845a31e93d4a76/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:28:13-30:85
+191                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+191-->[com.google.firebase:firebase-datatransport:18.1.6] /Users/hassanraufbutt/.gradle/caches/transforms-3/76f364c05ff1c1f9c2845a31e93d4a76/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:29:17-115
+192                android:value="com.google.firebase.components.ComponentRegistrar" />
+192-->[com.google.firebase:firebase-datatransport:18.1.6] /Users/hassanraufbutt/.gradle/caches/transforms-3/76f364c05ff1c1f9c2845a31e93d4a76/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:30:17-82
+193            <meta-data
+193-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/b4f5238f4ee0d26d39d8b70e223ced76/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:31:13-33:85
+194                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+194-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/b4f5238f4ee0d26d39d8b70e223ced76/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:32:17-139
+195                android:value="com.google.firebase.components.ComponentRegistrar" />
+195-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/b4f5238f4ee0d26d39d8b70e223ced76/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:33:17-82
+196            <meta-data
+196-->[com.google.firebase:firebase-installations:17.0.3] /Users/hassanraufbutt/.gradle/caches/transforms-3/a7b268a84476d9b315de1c2db6238509/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:18:13-20:85
+197                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+197-->[com.google.firebase:firebase-installations:17.0.3] /Users/hassanraufbutt/.gradle/caches/transforms-3/a7b268a84476d9b315de1c2db6238509/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:19:17-127
+198                android:value="com.google.firebase.components.ComponentRegistrar" />
+198-->[com.google.firebase:firebase-installations:17.0.3] /Users/hassanraufbutt/.gradle/caches/transforms-3/a7b268a84476d9b315de1c2db6238509/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:20:17-82
+199        </service>
+200
+201        <provider
+201-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:9-43:38
+202            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+202-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:13-102
+203            android:authorities="com.deffo.flutterfirebasemessaginginitprovider"
+203-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-88
+204            android:exported="false"
+204-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-37
+205            android:initOrder="99" />
+205-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-35
+206
+207        <service
+207-->[:geolocator_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:56
+208            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+208-->[:geolocator_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-77
+209            android:enabled="true"
+209-->[:geolocator_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-35
+210            android:exported="false"
+210-->[:geolocator_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+211            android:foregroundServiceType="location" />
+211-->[:geolocator_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-53
+212
+213        <provider
+213-->[:image_picker_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+214            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+214-->[:image_picker_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-82
+215            android:authorities="com.deffo.flutter.image_provider"
+215-->[:image_picker_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-74
+216            android:exported="false"
+216-->[:image_picker_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+217            android:grantUriPermissions="true" >
+217-->[:image_picker_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+218            <meta-data
+218-->[:image_picker_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:75
+219                android:name="android.support.FILE_PROVIDER_PATHS"
+219-->[:image_picker_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-67
+220                android:resource="@xml/flutter_image_picker_file_paths" />
+220-->[:image_picker_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-72
+221        </provider>
+222
+223        <receiver
+223-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-16:40
+224            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+224-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-97
+225            android:exported="false" />
+225-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+226        <receiver
+226-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-26:20
+227            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+227-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-101
+228            android:exported="false" >
+228-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+229            <intent-filter>
+229-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-25:29
+230                <action android:name="android.intent.action.BOOT_COMPLETED" />
+230-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-79
+230-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-76
+231                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+231-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-84
+231-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-81
+232                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+232-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-82
+232-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:25-79
+233                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+233-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-82
+233-->[:flutter_local_notifications] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-79
+234            </intent-filter>
+235        </receiver>
+236
+237        <activity
+237-->[:url_launcher_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-11:74
+238            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+238-->[:url_launcher_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-74
+239            android:exported="false"
+239-->[:url_launcher_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-37
+240            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+240-->[:url_launcher_android] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-71
+241
+242        <service
+242-->[:location] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-15:56
+243            android:name="com.lyokone.location.FlutterLocationService"
+243-->[:location] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-71
+244            android:enabled="true"
+244-->[:location] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-35
+245            android:exported="false"
+245-->[:location] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
+246            android:foregroundServiceType="location" />
+246-->[:location] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-53
+247
+248        <receiver
+248-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:44:9-51:20
+249            android:name="com.razorpay.RzpTokenReceiver"
+249-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:45:13-57
+250            android:exported="true" >
+250-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:46:13-36
+251            <intent-filter>
+251-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:48:13-50:29
+252                <action android:name="rzp.device_token.share" />
+252-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:39:13-61
+252-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:39:21-58
+253            </intent-filter>
+254        </receiver>
+255
+256        <activity
+256-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:53:9-61:20
+257            android:name="com.razorpay.CheckoutActivity"
+257-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:54:13-57
+258            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+258-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:55:13-83
+259            android:exported="true"
+259-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:56:13-36
+260            android:theme="@style/CheckoutTheme" >
+260-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:57:13-49
+261            <intent-filter>
+261-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:58:13-60:29
+262                <action android:name="android.intent.action.MAIN" />
+262-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:73:17-69
+262-->/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/android/app/src/main/AndroidManifest.xml:73:25-66
+263            </intent-filter>
+264        </activity>
+265
+266        <meta-data
+266-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:63:9-65:58
+267            android:name="com.razorpay.plugin.googlepay_all"
+267-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:64:13-61
+268            android:value="com.razorpay.RzpGpayMerged" />
+268-->[com.razorpay:checkout:1.6.29] /Users/hassanraufbutt/.gradle/caches/transforms-3/15691e183969dfb79e39219932b3e7b6/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:65:13-55
+269
+270        <uses-library
+270-->[androidx.window:window:1.0.0-beta04] /Users/hassanraufbutt/.gradle/caches/transforms-3/bc19463868d18c795ccf204076c3fa6a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+271            android:name="androidx.window.extensions"
+271-->[androidx.window:window:1.0.0-beta04] /Users/hassanraufbutt/.gradle/caches/transforms-3/bc19463868d18c795ccf204076c3fa6a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+272            android:required="false" />
+272-->[androidx.window:window:1.0.0-beta04] /Users/hassanraufbutt/.gradle/caches/transforms-3/bc19463868d18c795ccf204076c3fa6a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+273        <uses-library
+273-->[androidx.window:window:1.0.0-beta04] /Users/hassanraufbutt/.gradle/caches/transforms-3/bc19463868d18c795ccf204076c3fa6a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+274            android:name="androidx.window.sidecar"
+274-->[androidx.window:window:1.0.0-beta04] /Users/hassanraufbutt/.gradle/caches/transforms-3/bc19463868d18c795ccf204076c3fa6a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+275            android:required="false" />
+275-->[androidx.window:window:1.0.0-beta04] /Users/hassanraufbutt/.gradle/caches/transforms-3/bc19463868d18c795ccf204076c3fa6a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+276
+277        <receiver
+277-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:32:9-39:20
+278            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+278-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:33:13-78
+279            android:exported="true"
+279-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:34:13-36
+280            android:permission="com.google.android.c2dm.permission.SEND" >
+280-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:35:13-73
+281            <intent-filter>
+281-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-30:29
+282                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+282-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-81
+282-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-78
+283            </intent-filter>
+284        </receiver>
+285        <!--
+286             FirebaseMessagingService performs security checks at runtime,
+287             but set to not exported to explicitly avoid allowing another app to call it.
+288        -->
+289        <service
+289-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:45:9-52:19
+290            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+290-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:46:13-82
+291            android:directBootAware="true"
+291-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:47:13-43
+292            android:exported="false" >
+292-->[com.google.firebase:firebase-messaging:23.0.8] /Users/hassanraufbutt/.gradle/caches/transforms-3/a2875d3f34d44713a79605d2b042da2a/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:48:13-37
+293            <intent-filter android:priority="-500" >
+293-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
+294                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+294-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-78
+294-->[:firebase_messaging] /Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-75
+295            </intent-filter>
+296        </service>
+297        <service
+297-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/0f5974f0a68e00ce6c3ff94fc994bee4/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:29:9-35:19
+298            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+298-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/0f5974f0a68e00ce6c3ff94fc994bee4/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:30:13-103
+299            android:exported="false" >
+299-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/0f5974f0a68e00ce6c3ff94fc994bee4/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:31:13-37
+300            <meta-data
+300-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/0f5974f0a68e00ce6c3ff94fc994bee4/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:32:13-34:39
+301                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+301-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/0f5974f0a68e00ce6c3ff94fc994bee4/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:33:17-94
+302                android:value="cct" />
+302-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/0f5974f0a68e00ce6c3ff94fc994bee4/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:34:17-36
+303        </service>
+304        <service
+304-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/6ac56522b597f8a363cefee2803da6d7/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:26:9-30:19
+305            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+305-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/6ac56522b597f8a363cefee2803da6d7/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:27:13-117
+306            android:exported="false"
+306-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/6ac56522b597f8a363cefee2803da6d7/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:28:13-37
+307            android:permission="android.permission.BIND_JOB_SERVICE" >
+307-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/6ac56522b597f8a363cefee2803da6d7/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:29:13-69
+308        </service>
+309
+310        <receiver
+310-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/6ac56522b597f8a363cefee2803da6d7/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:32:9-34:40
+311            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+311-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/6ac56522b597f8a363cefee2803da6d7/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:33:13-132
+312            android:exported="false" />
+312-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/hassanraufbutt/.gradle/caches/transforms-3/6ac56522b597f8a363cefee2803da6d7/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:34:13-37
+313
+314        <provider
+314-->[com.google.firebase:firebase-common:20.1.2] /Users/hassanraufbutt/.gradle/caches/transforms-3/b3554375aa26982af84d6a277f6f9e62/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:26:9-31:39
+315            android:name="com.google.firebase.provider.FirebaseInitProvider"
+315-->[com.google.firebase:firebase-common:20.1.2] /Users/hassanraufbutt/.gradle/caches/transforms-3/b3554375aa26982af84d6a277f6f9e62/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:27:13-77
+316            android:authorities="com.deffo.firebaseinitprovider"
+316-->[com.google.firebase:firebase-common:20.1.2] /Users/hassanraufbutt/.gradle/caches/transforms-3/b3554375aa26982af84d6a277f6f9e62/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:28:13-72
+317            android:directBootAware="true"
+317-->[com.google.firebase:firebase-common:20.1.2] /Users/hassanraufbutt/.gradle/caches/transforms-3/b3554375aa26982af84d6a277f6f9e62/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:29:13-43
+318            android:exported="false"
+318-->[com.google.firebase:firebase-common:20.1.2] /Users/hassanraufbutt/.gradle/caches/transforms-3/b3554375aa26982af84d6a277f6f9e62/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:30:13-37
+319            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+319-->[com.google.firebase:firebase-common:20.1.2] /Users/hassanraufbutt/.gradle/caches/transforms-3/b3554375aa26982af84d6a277f6f9e62/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:31:13-36
+320        <uses-library
+320-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/58566d9b6984c216dc051051d0474ff8/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+321            android:name="org.apache.http.legacy"
+321-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/58566d9b6984c216dc051051d0474ff8/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+322            android:required="false" />
+322-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/58566d9b6984c216dc051051d0474ff8/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+323
+324        <receiver
+324-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:29:9-33:20
+325            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+325-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:30:13-85
+326            android:enabled="true"
+326-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:31:13-35
+327            android:exported="false" >
+327-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:32:13-37
+328        </receiver>
+329
+330        <service
+330-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:35:9-38:40
+331            android:name="com.google.android.gms.measurement.AppMeasurementService"
+331-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:36:13-84
+332            android:enabled="true"
+332-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:37:13-35
+333            android:exported="false" />
+333-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:38:13-37
+334        <service
+334-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:39:9-43:72
+335            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+335-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:40:13-87
+336            android:enabled="true"
+336-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:41:13-35
+337            android:exported="false"
+337-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:42:13-37
+338            android:permission="android.permission.BIND_JOB_SERVICE" />
+338-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/cc2510991d7f5e6a941216238cc9d267/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:43:13-69
+339
+340        <activity
+340-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+341            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+341-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+342            android:excludeFromRecents="true"
+342-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+343            android:exported="false"
+343-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+344            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+344-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+345        <!--
+346            Service handling Google Sign-In user revocation. For apps that do not integrate with
+347            Google Sign-In, this service will never be started.
+348        -->
+349        <service
+349-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+350            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+350-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+351            android:exported="true"
+351-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+352            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+352-->[com.google.android.gms:play-services-auth:17.0.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/398e7bf544e451cc84128bfccd490d13/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+353
+354        <activity
+354-->[com.google.android.gms:play-services-base:18.0.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/955dc1a1078e5c51d149a4d25f3a99af/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+355            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+355-->[com.google.android.gms:play-services-base:18.0.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/955dc1a1078e5c51d149a4d25f3a99af/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+356            android:exported="false"
+356-->[com.google.android.gms:play-services-base:18.0.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/955dc1a1078e5c51d149a4d25f3a99af/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+357            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+357-->[com.google.android.gms:play-services-base:18.0.1] /Users/hassanraufbutt/.gradle/caches/transforms-3/955dc1a1078e5c51d149a4d25f3a99af/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+358
+359        <meta-data
+359-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/086808bc67afb25b4c0b46de4375748e/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+360            android:name="com.google.android.gms.version"
+360-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/086808bc67afb25b4c0b46de4375748e/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+361            android:value="@integer/google_play_services_version" />
+361-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hassanraufbutt/.gradle/caches/transforms-3/086808bc67afb25b4c0b46de4375748e/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+362    </application>
+363
+364</manifest>

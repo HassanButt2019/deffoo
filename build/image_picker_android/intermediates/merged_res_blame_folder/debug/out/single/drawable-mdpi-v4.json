@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_res/debug/drawable-mdpi-v4/notification_bg_normal.9.png",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/1aff575abe68e2d960b5656b9f2fb7c6/transformed/core-1.8.0/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_res/debug/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/1aff575abe68e2d960b5656b9f2fb7c6/transformed/core-1.8.0/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_res/debug/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/1aff575abe68e2d960b5656b9f2fb7c6/transformed/core-1.8.0/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_res/debug/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/1aff575abe68e2d960b5656b9f2fb7c6/transformed/core-1.8.0/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/hassanraufbutt/Desktop/Flutter Work/deffo-master/build/image_picker_android/intermediates/merged_res/debug/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/Users/hassanraufbutt/.gradle/caches/transforms-3/1aff575abe68e2d960b5656b9f2fb7c6/transformed/core-1.8.0/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    }
+]
